@@ -20,7 +20,7 @@
 / {
     macros {
         login: login {
-            label = "MC_login";
+            label = "login";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
