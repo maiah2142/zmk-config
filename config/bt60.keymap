@@ -26,7 +26,7 @@
             bindings
                 = <&macro_tap &kp I &kp N &kp T &kp U &kp N &kp E &kp UNDER &kp D &kp E &kp P &kp L &kp O &kp Y &kp M &kp E &kp N &kp T &kp N1>
                 , <&macro_tap &kp AT &kp T &kp E &kp A &kp M &kp G &kp L &kp O &kp B &kp A &kp L &kp E &kp X &kp P>
-                , <&macro_tap &kp PERIOD &kp C &kp O &kp M &kp RET>
+                , <&macro_tap &kp DOT &kp C &kp O &kp M &kp RET>
                 ;
         };
         
@@ -43,7 +43,7 @@
                 , <&macro_press &kp LSHFT>
                 , <&macro_tap &kp A &kp S>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp DLLR &kp UNDER &kp N2 &kp N4 &kp N6>
+                , <&macro_tap &kp DLLR &kp UNDER &kp N2 &kp N4 &kp N6 &kp RET>
                 ;
         };
     };
