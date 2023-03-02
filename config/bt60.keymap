@@ -2,7 +2,8 @@
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
- * SPDX-License-Identifier: MIT
+ * SPDX-License-Identifier: MIT      Cancel changes
+
  */
 
 
@@ -19,12 +20,14 @@
 
 / {
     macros {
-        login: login {
-            label = "login";
+        zed_em_kay: zed_em_kay {
+            label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp I &kp N &kp T &kp U &kp N &kp E &kp UNDER &kp D &kp E &kp P &kp L &kp O &kp Y &kp M &kp E &kp N &kp T &kp N1 &kp AT &kp T &kp E &kp A &kp M &kp G &kp L &kp O &kp B &kp A &kp L &kp E &kp X &kp P &kp DOT &kp C &kp O &kp M>
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
                 ;
         };
     };
@@ -48,7 +51,7 @@
         layer_raise {
             bindings = <
   &kp GRAVE     &kp F1   &kp F2     &kp F3    &kp F4   &kp F5             &kp F6      &kp F7     &kp F8     &kp F9    &kp F10     &kp F11  &kp F12  &kp DEL
-     &trans     &trans   &kp UP     &trans    &trans   &trans             &trans      &trans     &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK &kp UP &trans &login
+     &trans     &trans   &kp UP     &trans    &trans   &trans             &trans      &trans     &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK &kp UP &trans &zed_em_kay
      &trans     &kp LEFT &kp DOWN   &kp RIGHT &trans   &trans             &trans      &kp INS    &kp HOME     &KP PG_UP &kp LEFT    &kp RIGHT &trans
      &trans     &trans   &trans     &trans    &trans   &trans             &trans      &trans     &kp END     &kp PG_DN  &kp DOWN   &trans    &trans
               &trans    &trans      &trans             &trans                         &trans     &trans     &trans
