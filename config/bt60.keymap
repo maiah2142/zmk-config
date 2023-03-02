@@ -19,14 +19,13 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
-            label = "ZM_zed_em_kay";
+        login: login {
+            label = "ZM_login";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = <&macro_tap &kp I &kp N &kp T &kp U &kp N &kp E &kp UNDER &kp D &kp E &kp P &kp L &kp O &kp Y &kp M &kp E &kp N &kp T &kp N1>
+                , <&macro_tap &kp AT &kp T &kp E &kp A &kp M &kp G &kp L &kp O &kp B &kp A &kp L &kp E &kp X &kp P &kp DOT &kp C &kp O &kp M>
                 ;
         };
     };
@@ -48,7 +47,7 @@
         layer_raise {
             bindings = <
   &kp GRAVE     &kp F1   &kp F2     &kp F3    &kp F4   &kp F5             &kp F6      &kp F7     &kp F8     &kp F9    &kp F10     &kp F11  &kp F12  &kp DEL
-     &trans     &trans   &kp UP     &trans    &trans   &trans             &trans      &trans     &kp INS    &trans  &kp PSCRN    &kp SLCK  &kp PAUSE_BREAK &zed_em_kay
+     &trans     &trans   &kp UP     &trans    &trans   &trans             &trans      &trans     &kp INS    &trans  &kp PSCRN    &kp SLCK  &kp PAUSE_BREAK &login
      &trans     &kp LEFT &kp DOWN   &kp RIGHT &trans   &trans             &trans      &trans     &trans     &trans   &kp HOME    &kp PG_UP &trans
      &trans     &trans   &trans     &trans    &trans   &trans             &trans      &trans     &trans     &kp END  &kp PG_DN   &kp C_NEXT &trans
               &trans    &trans      &trans             &trans                         &trans     &trans     &trans
