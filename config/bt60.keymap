@@ -29,6 +29,23 @@
                 , <&macro_tap &kp PERIOD &kp C &kp O &kp M &kp RET>
                 ;
         };
+        
+        pass: pass {
+            label = "ZM_pass";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp D>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp O>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp M &kp AT &kp EXCL &kp N &kp P>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp A &kp S>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp DLLR &kp UNDER &kp N2 &kp N4 &kp N6>
+                ;
+        };
     };
     
     keymap {
@@ -49,7 +66,7 @@
             bindings = <
   &kp GRAVE     &kp F1   &kp F2     &kp F3    &kp F4   &kp F5             &kp F6      &kp F7     &kp F8     &kp F9    &kp F10     &kp F11  &kp F12  &kp DEL
      &trans     &trans   &kp UP     &trans    &trans   &trans             &trans      &trans     &kp INS    &trans  &kp PSCRN    &kp SLCK  &kp PAUSE_BREAK &login
-     &trans     &kp LEFT &kp DOWN   &kp RIGHT &trans   &trans             &trans      &trans     &trans     &trans   &kp HOME    &kp PG_UP &trans
+     &trans     &kp LEFT &kp DOWN   &kp RIGHT &trans   &trans             &trans      &trans     &trans     &trans   &kp HOME    &kp PG_UP &pass
      &trans     &trans   &trans     &trans    &trans   &trans             &trans      &trans     &trans     &kp END  &kp PG_DN   &kp C_NEXT &trans
               &trans    &trans      &trans             &trans                         &trans     &trans     &trans
             >;
